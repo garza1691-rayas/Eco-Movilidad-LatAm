@@ -1,51 +1,37 @@
-# 📈 Análisis de Correlación: Movilidad Urbana vs. Productividad Económica (LatAm)
+Análisis de Movilidad Urbana y Productividad Económica en Latinoamérica 🚗📈
+Este proyecto surge como un estudio de Análisis de Datos para evaluar la relación entre el tráfico vehicular (movilidad) y el desempeño económico (PIB per cápita y desempleo) en las principales ciudades de Latinoamérica. El objetivo final es identificar ciudades estratégicas para la inversión en infraestructura de transporte.
 
-## 🎯 Objetivo del Proyecto
-Este proyecto busca evaluar la relación entre la congestión vehicular y el rendimiento económico en las principales metrópolis de Latinoamérica. Utilizando datos de tráfico en tiempo real y métricas de productividad urbana, el análisis identifica en qué ciudades la falta de infraestructura de transporte actúa como un cuello de botella para el crecimiento del PIB.
+📋 Descripción del Proyecto
+Como analista de datos, el flujo de trabajo consistió en:
 
----
+Extracción y Carga: Uso de datos reales provenientes de TomTom Traffic Index y OECD Cities.
 
-## 🛠️ Herramientas y Tecnologías
-- **Python 3.x**: Lenguaje principal para el procesamiento de datos.
-- **Pandas & NumPy**: Limpieza, manipulación y tratamiento de valores nulos (Imputación estadística).
-- **SQL**: Extracción y segmentación de datos relacionales.
-- **Matplotlib & Seaborn**: Visualización de correlaciones y distribuciones.
-- **Fuentes de Datos**: 
-  - [TomTom Traffic Index](https://www.tomtom.com/traffic-index/) (Datos de congestión).
-  - [OECD Cities Database](https://stats.oecd.org/) (PIB y Productividad).
+Procesamiento de Datos: Limpieza profunda de tipos de datos, corrección de formatos numéricos (monedas y porcentajes) y estandarización de nombres de columnas a formato snake_case.
 
----
+Análisis Exploratorio: Filtrado de datos para el año 2024 y combinación de datasets para obtener una visión integral de cada ciudad.
 
-## 📋 Metodología (Data Pipeline)
+🛠️ Tecnologías Utilizadas
+Lenguaje: Python 🐍
 
-### 1. Extracción y Limpieza (ETL)
-Se integraron datasets de fuentes heterogéneas mediante operaciones de `Merge` y `Join`. Se realizó un análisis de calidad de datos detectando un [X]% de valores faltantes en métricas de emisiones de $CO_2$.
+Librerías: * Pandas para manipulación de datos.
 
-### 2. Tratamiento de Datos
-- **Imputación**: Se aplicó una estrategia de **imputación por mediana global** para mantener la consistencia estadística.
-- **Normalización**: Ajuste de escalas entre el índice de tráfico y el PIB per cápita.
+NumPy para operaciones numéricas.
 
-### 3. Análisis Crítico y Mejoras
-- **Fortaleza**: El modelo permite identificar ciudades con alta productividad pero eficiencia de movilidad crítica.
-- **Propuesta de Mejora**: Implementación de **K-Means Clustering** para agrupar ciudades por nivel de desarrollo, evitando sesgos en la comparación entre megaciudades y ciudades intermedias.
+Seaborn y Matplotlib para la visualización de datos.
 
----
+📊 Estructura de los Datos
+El proyecto integra dos fuentes principales:
 
-## 📊 Hallazgos Clave (Insights)
-- Existe una correlación de [0.XX] entre las horas perdidas en tráfico y la pérdida de productividad en ciudades como CDMX y São Paulo.
-- Las ciudades con mayor inversión en infraestructura de transporte masivo muestran una resiliencia económica superior frente a picos de congestión.
+Tráfico (traffic): Datos de demoras (jams_delay), recuento de atascos (jams_count) e índices de tráfico en tiempo real.
 
----
+Economía (eco): Indicadores de PIB per cápita, tasa de desempleo, niveles de contaminación (PM2.5) y población total.
 
-## 🚀 Visualización del Proyecto
-Puedes ver el reporte interactivo y el análisis detallado aquí:
-👉 **[Ver Análisis en GitHub Pages](TU_URL_DE_GITHUB_PAGES)**
+🧩 Pasos Clave del Análisis
+Limpieza de Datos: Conversión de columnas de fecha (datetime) y transformación de strings con formatos regionales (comas y puntos) a valores flotantes utilizables para cálculos.
 
----
+Transformación: Creación de nuevas variables como population (basada en millones) y extracción de componentes temporales para filtrado por año.
 
-## 🧑‍💻 Autor
-**[Tu Nombre]** - Analista de Datos Jr.
-*Especialista en Diagnóstico Técnico con enfoque en precisión de datos.*
+Integración: Unión de datasets económicos y de movilidad para realizar análisis correlacionales.
 
-- [LinkedIn](TU_URL_LINKEDIN)
-- [GitHub](TU_URL_GITHUB)
+🚀 Conclusiones
+El proyecto permite visualizar qué ciudades presentan altos índices de congestión en relación con su productividad, proporcionando una base sólida para la toma de decisiones en políticas públicas y proyectos de infraestructura.

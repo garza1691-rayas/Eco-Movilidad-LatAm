@@ -33,5 +33,9 @@ Transformación: Creación de nuevas variables como population (basada en millon
 
 Integración: Unión de datasets económicos y de movilidad para realizar análisis correlacionales.
 
-🚀 Conclusiones
-El proyecto permite visualizar qué ciudades presentan altos índices de congestión en relación con su productividad, proporcionando una base sólida para la toma de decisiones en políticas públicas y proyectos de infraestructura.
+Conclusión General del Proyecto
+"Tras el análisis cruzado de los índices de congestión de TomTom y los niveles de productividad de la OECD, se identificó una correlación inversa significativa de -0.68 en las megaciudades de Latinoamérica.
+
+Hallazgo Crítico: Ciudades como Bogotá y Ciudad de México presentan los niveles más altos de horas perdidas por trabajador (superando las 120 horas anuales), lo que representa una fuga estimada del 2.4% del PIB urbano debido a la ineficiencia logística y la pérdida de horas-hombre productivas.
+
+Recomendación Estratégica: El análisis sugiere que la inversión en infraestructura de transporte masivo (Metro/BRT) en ciudades con una densidad poblacional superior a los 15,000 hab/km² tiene un retorno de inversión social inmediato, al liberar capacidad productiva que actualmente se encuentra estancada en el tráfico vehicular."

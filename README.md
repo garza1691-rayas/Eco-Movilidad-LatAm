@@ -33,7 +33,7 @@ Transformación: Creación de nuevas variables como population (basada en millon
 
 Integración: Unión de datasets económicos y de movilidad para realizar análisis correlacionales.
 
-Conclusión General del Proyecto
+📌Conclusión General del Proyecto
 "Tras el análisis cruzado de los índices de congestión de TomTom y los niveles de productividad de la OECD, se identificó una correlación inversa significativa de -0.68 en las megaciudades de Latinoamérica.
 
 Hallazgo Crítico: Ciudades como Bogotá y Ciudad de México presentan los niveles más altos de horas perdidas por trabajador (superando las 120 horas anuales), lo que representa una fuga estimada del 2.4% del PIB urbano debido a la ineficiencia logística y la pérdida de horas-hombre productivas.
